@@ -1,2 +1,3 @@
 # RazeCore
-A reusable framework tutorial
+
+A description of this package.
