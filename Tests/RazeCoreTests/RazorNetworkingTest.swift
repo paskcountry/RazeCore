@@ -8,21 +8,35 @@
 import XCTest
 @testable import RazeCore
 
+class NetworkSessionMock: NetworkSession {
+    var data: Data?
+    var error: Error?
+    
+    func get(from url: URL, completionHandler: @escaping (Data?, Error?) -> Void) {
+        completionHandler(data, error)
+    }
+}
+
 final class RazorNetworkingTest: XCTestCase {
 
     
     func testLoadDataCall() {
         let manager = RazeCore.Networking.Manager()
-        let expectation = XCTestExpectation(description: "Called for data")
-        guard let url = URL(string: "https://raywenderlich.com") else {
-            return XCTFail("Could not create URL Property")
-        }
         
-        manager.loadData(from:url) { result in
+        let session = NetworkSessionMock()
+        manager.session = session
+        
+        let expectation = XCTestExpectation(description: "Called for data")
+       
+        let data = Data([0,1,0,1])
+        session.data = data
+        let url = URL(fileURLWithPath: "url")
+        
+        manager.loadData(from: url) { result in
             expectation.fulfill()
             switch result {
                 case .success(let returnedData):
-                    XCTAssertNotNil(returnedData, "Response data is not nil")
+                    XCTAssertEqual(data,  returnedData, "Response data is not equal")
                 
                 case .failure(let error):
                     XCTFail(error?.localizedDescription ?? "error forming error result")
