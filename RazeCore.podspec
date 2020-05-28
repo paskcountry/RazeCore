@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "RazeCore.podspec"
+  spec.name         = "RazeCore"
   spec.version      = "0.3.0"
   spec.summary      = "A framework for sharing code tutorial"
 
