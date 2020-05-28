@@ -52,7 +52,7 @@
 		C7B5EAFF247F976200DFD2CD /* RazeCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RazeCore.swift; sourceTree = "<group>"; };
 		C7B5EB01247F983600DFD2CD /* RazorNetworkingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RazorNetworkingTest.swift; sourceTree = "<group>"; };
 		C7B5EB03247F98C700DFD2CD /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		C7B5EB06247FB54000DFD2CD /* RazeCore.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RazeCore.podspec; sourceTree = "<group>"; };
+		C7B5EB06247FB54000DFD2CD /* RazeCoreTest.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RazeCoreTest.podspec; sourceTree = "<group>"; };
 		OBJ_12 /* RazeColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RazeColorTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
-				C7B5EB06247FB54000DFD2CD /* RazeCore.podspec */,
+				C7B5EB06247FB54000DFD2CD /* RazeCoreTest.podspec */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_10 /* Tests */,
